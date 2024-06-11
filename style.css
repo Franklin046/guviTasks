@@ -1,98 +1,95 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: sans-serif;
-  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
 }
 
-.header {
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container-content {
   text-align: center;
   margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #333;
+h2 {
+  margin-top: 0;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  justify-items: center;
-  overflow: hidden;
-  padding: 16px 28px;
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.events-row {
-  display: contents;
+.image-container {
+  flex-basis: 30%;
+  margin: 20px;
 }
 
-.events {
-  grid-column: span 1;
-  border: 1px solid #ddd;
-  padding: 48px;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.events:hover {
-  transform: scale(1.1);
-}
-
-.events h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.img-box {
+.image-container img {
   width: 100%;
-  height: 150px;
-  border: 1px solid #ddd;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.img-box img {
-  width: 100%;
-  height: 100%;
+  height: 244px;
   object-fit: cover;
-  transition: all 0.4s;
+  border-radius: 10px;
+  margin-top: 44px;
 }
 
-.img-box img:hover {
-  transform: scale(1.1);
+.form-container {
+  flex-basis: 60%;
+  margin: 20px;
 }
 
-.events h3 {
-  font-size: 1em;
-  margin-bottom: 5px;
-  color: #333;
+.form-group {
+  margin-bottom: 20px;
 }
 
-.events p {
-  font-size: 0.8em;
+label {
+  display: block;
   margin-bottom: 10px;
-  color: #666;
 }
 
-.events a {
-  display: inline-block;
-  padding: 8px 15px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
+.img {
+  height: 300px;
+  width: 300px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
-.events a:hover {
-  background-color: #0056b3;
+button[type="submit"] {
+  background-color: #15d61ca2;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #aaa;
 }
